@@ -702,6 +702,9 @@ a:focus {
     color: #513fce;
 }
 
+.about-content p {
+    text-align: justify;
+}
 
 /*******************************/
 /********* Service CSS *********/
