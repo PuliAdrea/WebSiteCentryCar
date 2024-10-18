@@ -307,6 +307,40 @@ a:focus {
     }
 }
 
+.navbar .whatsapp-icon-large {
+    position: absolute;
+    right: 15px; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+.navbar .whatsapp-icon-large img {
+    width: 150px; 
+    transition: transform 0.3s ease;
+}
+
+.navbar .whatsapp-icon-large:hover img {
+    transform: scale(1.2);
+}
+
+.navbar .whatsapp-icon-small {
+    display: none; 
+}
+
+@media (max-width: 767px) {
+    .navbar .whatsapp-icon-large {
+        display: none;
+    }
+
+    .navbar .whatsapp-icon-small {
+        display: inline-block; 
+        margin-right: 10px; 
+    }
+
+    .navbar .whatsapp-icon-small img {
+        width: 40px; 
+    }
+}
 
 /*******************************/
 /********** Hero CSS ***********/
