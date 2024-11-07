@@ -35,11 +35,10 @@ a:focus {
     text-align: center; 
     font-size: 16px;
     font-weight: 500;
-    color: #ffffff;
+    color: #bfc9ca;
     background: #513fce;
-    border: none;
     border-radius: 60px;
-    box-shadow: inset 0 0 0 0 #131010;
+    box-shadow: inset 0 0 0 0 #bfc9ca;
     transition: ease-out 0.5s;
     -webkit-transition: ease-out 0.5s;
     -moz-transition: ease-out 0.5s;
@@ -47,8 +46,9 @@ a:focus {
 
 .btn.btn-custom:hover {
     color: #513fce;
-    background: #131010;
-    box-shadow: inset 200px 0 0 0 #131010;
+    background: #bfc9ca;
+    box-shadow: inset 200px 0 0 0 #bfc9ca;
+    border: #513fce;
 }
 
 .btn:focus,
@@ -128,7 +128,7 @@ a:focus {
     right: 15px;
     bottom: 15px;
     transition: .5s;
-    background: #4634c1;
+    background: #513fce;
     border-radius: 44px;
     z-index: 9;
 }
@@ -405,13 +405,18 @@ a:focus {
     z-index: 2;
 }
 
-.carousel .carousel-text h3 {
-    color: #513fce;
-    font-size: 20px;
+.carousel .carousel-text h2 {
+    color: #ffffff;
+    font-size: 30px;
     font-weight: 700;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 0px;
+    text-shadow: 
+        -2px -2px 0px #513fce, 
+        2px -2px 0px #513fce,  
+        -2px 2px 0px #513fce,  
+        2px 2px 0px #513fce;   
 }
 
 .carousel .carousel-text h1 {
@@ -552,7 +557,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 90px 0;
     text-align: center;
-    background: #202C45;
+    background: #513fce;
     border-top: 1px dotted #ffffff;
 }
 
@@ -758,7 +763,14 @@ a:focus {
 }
 
 .service .service-item i {
-    color: #202C45;
+    color: #513fce;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 20px;
+}
+
+.cardsmall i {
+    color: #513fce;
     font-size: 75px;
     line-height: 75px;
     margin-bottom: 20px;
@@ -1189,139 +1201,6 @@ a:focus {
     background: #513fce;
 }
 
-/*******************************/
-/*********** Blog CSS **********/
-/*******************************/
-.blog {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 0 0;
-}
-
-.blog .blog-item {
-    margin-bottom: 45px;
-}
-
-.blog .blog-img {
-    position: relative;
-    width: 100%;
-}
-
-.blog .blog-img img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.blog .meta-date {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    bottom: 10%;
-    left: calc(50% - 35px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 70px;
-    background: #202C45;
-    color: #ffffff;
-    opacity: 0;
-    transition: .5s;
-}
-
-.blog .meta-date span {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-.blog .meta-date strong {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.blog .blog-item:hover .meta-date {
-    bottom: calc(50% - 35px);
-    opacity: 1;
-}
-
-.blog .blog-text {
-    padding: 25px 0 20px 0;
-}
-
-.blog .blog-text h3 {
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.blog .blog-text h3 a {
-    color: #202C45;
-}
-
-.blog .blog-text h3 a:hover {
-    color: #513fce;
-}
-
-.blog .blog-text p {
-    margin: 0;
-}
-
-.blog .blog-meta {
-    display: flex;
-}
-
-.blog .blog-meta p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 14px;
-    padding: 0 10px;
-    border-right: 1px solid rgba(0, 0, 0, .15);
-}
-
-.blog .blog-meta p:first-child {
-    padding-left: 0;
-}
-
-.blog .blog-meta p:last-child {
-    padding-right: 0;
-    border: none;
-}
-
-.blog .blog-meta i {
-    color: #999999;
-    margin-right: 5px;
-}
-
-.blog .blog-meta a {
-    color: #999999;
-}
-
-.blog .blog-meta a:hover {
-    color: #513fce;
-}
-
-.blog .pagination {
-    margin-bottom: 15px;
-}
-
-.blog .pagination .page-link {
-    color: #202C45;
-    border-radius: 0;
-    border-color: #202C45;
-}
-
-.blog .pagination .page-link:hover,
-.blog .pagination .page-item.active .page-link {
-    color: #513fce;
-    background: #202C45;
-}
-
-.blog .pagination .disabled .page-link {
-    color: #999999;
-}
 
 
 /*******************************/
