@@ -156,12 +156,14 @@ a:focus {
     top: 0;
     left: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    min-height: 90px; /* Asegura altura mínima */
+    transform: none; /* Previene transformaciones no deseadas */
 }
 
-.top-bar .container {
+.top-bar .row {
     height: 100%;
+    min-height: inherit; /* Hereda la altura mínima */
 }
-
 .top-bar .row {
     height: 100%;
 }
@@ -225,17 +227,21 @@ a:focus {
 /*********** Nav Bar CSS **********/ 
 /**********************************/
 .nav-bar {
-    position: fixed;
+    position: fixed !important; /* Fuerza la posición fija */
     width: 100%;
-    top: 90px;
+    height: 60px;
+    min-height: 60px; /* Asegura altura mínima */
+    top: 90px !important; /* Fuerza la posición top */
     left: 0;
     background: #131010;
     z-index: 999;
+    transform: none; /* Previene transformaciones no deseadas */
 }
 
 .nav-bar .navbar {
     padding: 0;
     height: 60px;
+    min-height: 60px; /* Asegura altura mínima */
     background: #131010 !important;
 }
 
@@ -253,14 +259,20 @@ a:focus {
     color: #513fce;
 }
 
+.nav-bar .navbar-brand,
+.nav-bar .navbar-toggler {
+    display: none; /* Oculto por defecto en pantallas grandes */
+}
+
 /* Ajustes responsive */
 @media (max-width: 991.98px) {
     .top-bar {
         height: 75px;
+        min-height: 75px;
     }
     
     .nav-bar {
-        top: 75px;
+        top: 75px !important;
     }
     
     .nav-bar .navbar {
@@ -268,6 +280,9 @@ a:focus {
         height: auto;
     }
     
+    .about {
+        margin-top: 135px; /* Ajusta el margen para móviles */
+    }
     .navbar-dark .navbar-nav .nav-link {
         line-height: 40px;
     }
@@ -276,12 +291,48 @@ a:focus {
         justify-content: center;
         margin-top: 15px;
     }
+
+    .nav-bar .navbar-brand {
+        display: block; /* Mostrar el título en móvil */
+        color: #ffffff;
+        font-weight: 500;
+        margin-right: auto; /* Empuja el botón de menú hacia la derecha */
+    }
+
+    .nav-bar .navbar-toggler {
+        display: block; /* Mostrar el botón de menú en móvil */
+        border-color: rgba(255, 255, 255, 0.5);
+        padding: 4px 12px;
+    }
+
+    /* Ajustes adicionales para mejor presentación en móvil */
+    .nav-bar .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+        width: 1.2em;
+        height: 1.2em;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-bar .collapse {
+        display: flex !important;
+    }
 }
 
 body {
-    padding-top: 150px;
+    padding-top: 150px !important; /* Fuerza el padding */
 }
 
+html, body {
+    overflow-x: hidden; /* Previene scroll horizontal */
+}
+
+.container-fluid {
+    overflow-x: visible;
+}
 .navbar .whatsapp-icon-large {
     position: absolute;
     right: 15px;
@@ -684,6 +735,7 @@ body {
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
+    margin-top: 150px; /* Asegura espacio para las barras fijas */
 }
 
 .about .section-header {
