@@ -280,9 +280,6 @@ a:focus {
         height: auto;
     }
     
-    .about {
-        margin-top: 135px; /* Ajusta el margen para móviles */
-    }
     .navbar-dark .navbar-nav .nav-link {
         line-height: 40px;
     }
@@ -735,7 +732,6 @@ html, body {
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
-    margin-top: 150px; /* Asegura espacio para las barras fijas */
 }
 
 .about .section-header {
@@ -772,7 +768,6 @@ html, body {
 .about-content p {
     text-align: justify;
 }
-
 /*******************************/
 /********* Service CSS *********/
 /*******************************/
