@@ -834,55 +834,22 @@ html, body {
     background: #131010;
 }
 
-.facts .facts-item {
-    display: flex;
-    flex-direction: row;
-    margin: 25px 0;
-}
-
-.facts .facts-item i {
-    margin-top: 15px;
-    font-size: 45px;
+.facts h3{
     color: #513fce;
 }
 
-.facts .facts-text {
-    padding-left: 20px;
-}
-
-.facts .facts-text h3 {
-    position: relative;
-    display: inline-block;
+.facts h2{
     color: #ffffff;
-    font-size: 60px;
-    font-weight: 700;
-}
-.facts .facts-text h1 {
-    position: relative;
-    display: inline-block;
-    color: #ffffff;
-    font-weight: 700;
-}
-
-.facts .facts-text h3::after {
-    position: absolute;
-    content: "\f067";
-    top: 0px;
-    right: -25px;
-    color: #ffffff;
-    font-size: 25px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-}
-
-.facts .facts-text p {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 500;
     margin: 0;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 30px;
 }
 
-
+.facts p{
+    color: #ffffff;
+}
 /*******************************/
 /********* Pricing CSS *********/
 /*******************************/
