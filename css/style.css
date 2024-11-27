@@ -831,15 +831,15 @@ html, body {
     margin: 45px 0;
     display: flex;
     align-items: center;
-    background: #131010;
+   /*background: #cfcfcf;*/
 }
 
 .facts h3{
-    color: #513fce;
+    color: black;
 }
 
 .facts h2{
-    color: #ffffff;
+    color: black;
     margin: 0;
     font-size: 45px;
     font-weight: 700;
@@ -848,7 +848,7 @@ html, body {
 }
 
 .facts p{
-    color: #ffffff;
+    color: black;
 }
 /*******************************/
 /********* Pricing CSS *********/
